@@ -1,13 +1,19 @@
-# .gitignore
 # never commit secrets or environment files
 .env
 .env.*
-*.key
 *.pem
 *.cer
 *.crt
+*.key
+
 # n8n credentials
 n8n-credentials.json
+
+# never commit documents that may contain secrets
+*.docx
+*secret*
+*Secret*
+
 # OS/editor junk
 .DS_Store
 Thumbs.db
